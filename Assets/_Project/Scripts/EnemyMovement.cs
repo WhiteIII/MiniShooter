@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using Zenject;
 
 namespace _Project
 {
@@ -9,10 +10,11 @@ namespace _Project
         [SerializeField] private AttackStartZone _attackStartZone;
         [SerializeField] private ExitFromAttackingZone _exitFromAttackingZone;
         [SerializeField] private EnemyGun _enemyGun;
-        [SerializeField] private Transform _player;
         [SerializeField] private Animator _enemyAnimator;
         [SerializeField] private float _shootRate;
         [SerializeField] private float _rotationSpeed;
+        
+        [Inject] private Transform _player;
 
         private bool _isMoving;
 

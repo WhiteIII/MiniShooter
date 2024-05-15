@@ -1,11 +1,13 @@
 using UnityEngine;
+using Zenject;
 
 namespace _Project
 {
     public class PlayersInventory : MonoBehaviour
     {
-        [SerializeField] private PickUpSystem _pickUpSystem;
         [System.NonSerialized] public GameObject Object;
+        
+        [Inject] private PickUpSystem _pickUpSystem;
 
         private void Awake()
         {

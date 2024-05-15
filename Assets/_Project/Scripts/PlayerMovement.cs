@@ -8,7 +8,6 @@ namespace _Project
     {
         [SerializeField] private float _speed;
         [SerializeField] private float _gravity;
-        [SerializeField] private float _jumpForce;
 
         private CharacterController _controller;
         private Vector3 _velocity;

@@ -1,13 +1,15 @@
 using System;
 using System.Collections;
 using UnityEngine;
+using Zenject;
 
 namespace _Project
 {
     public class PickUpSystem : MonoBehaviour
     {
         [SerializeField] private Transform _pickUp;
-        [SerializeField] private PlayersInventory _inventory;
+        
+        [Inject] private PlayersInventory _inventory;
 
         private Rigidbody _gunRigidbody;
         public event Action OnPickUp;

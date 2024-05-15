@@ -1,4 +1,5 @@
 using UnityEngine;
+using Zenject;
 
 namespace _Project
 {
@@ -6,9 +7,10 @@ namespace _Project
 
     public class FollowThePlayer : MonoBehaviour
     {
-        [SerializeField] private Transform _player;
         [SerializeField] private float _speed;
         [SerializeField] private float _gravity;
+
+        [Inject] private Transform _player;
 
         private Vector3 _velocity;
 

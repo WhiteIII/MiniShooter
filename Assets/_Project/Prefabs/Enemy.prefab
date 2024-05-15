@@ -949,10 +949,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _damage: 5
   _distance: 100
-  _attackSpeed: 0
-  _shootPoint: {fileID: 0}
-  _camera: {fileID: 0}
-  _holePrefab: {fileID: 751301699416110211, guid: 676d9a2a43fa3ce4eb46daf9aeb14219, type: 3}
   _layerMask:
     serializedVersion: 2
     m_Bits: 119
@@ -7521,7 +7517,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8804339845017647418}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1, z: -20.84}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -7567,9 +7563,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86abcef712ec2354c8005d4b9de79142, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _followThePlayer: {fileID: 2971079413876183159}
-  _attackStartZone: {fileID: 6489996708888187355}
-  _exitFromAttackingZone: {fileID: 5099091351930059516}
   _enemyGun: {fileID: 2749395547315483324}
   _player: {fileID: 0}
   _enemyAnimator: {fileID: 6319130274763919663}
