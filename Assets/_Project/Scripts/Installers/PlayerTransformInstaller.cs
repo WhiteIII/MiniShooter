@@ -5,11 +5,11 @@ namespace _Project
 {
     public class PlayerTransformInstaller : MonoInstaller
     {
-        [SerializeField] private Transform _playerTransform;
+        [SerializeField] private Player _player;
 
         public override void InstallBindings()
         {
-            Container.Bind<Transform>().FromInstance(_playerTransform).AsSingle();
+            Container.Bind<Player>().FromInstance(_player).AsSingle();
         }
     }
 }

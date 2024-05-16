@@ -14,12 +14,15 @@ namespace _Project
         [SerializeField] private float _shootRate;
         [SerializeField] private float _rotationSpeed;
         
-        [Inject] private Transform _player;
+        [Inject] private Player _player;
+        private Transform _playerTransform;
 
         private bool _isMoving;
 
         private void Awake()
         {
+            _playerTransform = _player.transform;
+            
             _attackStartZone.OnEntered += StartAttack;
             _exitFromAttackingZone.OnExit += EnemyMove;
         }
@@ -53,7 +56,7 @@ namespace _Project
             {
                 _enemyAnimator.SetTrigger("Idle");
                 
-                Vector3 direction = _player.position - transform.position;
+                Vector3 direction = _playerTransform.position - transform.position;
 
                 Quaternion rotation = Quaternion.LookRotation(direction);
 
